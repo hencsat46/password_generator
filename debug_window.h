@@ -1,7 +1,8 @@
-#ifndef DEB_H
-#define DEB_H
+#ifndef DEBUG_WINDOW_H
+#define DEBUG_WINDOW_H
 
 #include <QWidget>
+
 
 namespace Ui {
     class Deb;
@@ -14,9 +15,14 @@ class Deb : public QWidget
 public:
     explicit Deb(QWidget *parent = nullptr);
     ~Deb();
+    Ui::Deb *ui;
+    void show_text(const QString &string);
+
+public slots:
+    void sh_debug();
 
 private:
-    Ui::Deb *ui;
+
 };
 
-#endif // DEB_H
+#endif // DEBUG_WINDOW_H

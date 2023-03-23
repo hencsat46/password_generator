@@ -1,5 +1,5 @@
 #include "widget.h"
-
+#include "debug_window.h"
 #include <QApplication>
 
 

@@ -1,6 +1,7 @@
 #include "widget.h"
 #include "ui_widget.h"
-#include <QDebug>
+#include "debug_window.h"
+#include "ui_debug_window.h"
 
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
@@ -10,11 +11,13 @@ Widget::Widget(QWidget *parent)
     ui->m_check1->setChecked(true);
     ui->m_check2->setChecked(true);
     ui->m_check3->setChecked(true);
+    debug_w = new Deb(this);
 
 
 
-    connect(ui->debug_btn, SIGNAL(clicked()), this, SLOT(m_debug()));
+    connect(ui->debug_btn, SIGNAL(clicked()), debug_w, SLOT(debug_w->sh_debug()));
 
+    delete debug_w;
 }
 
 Widget::~Widget()
@@ -22,14 +25,6 @@ Widget::~Widget()
     delete ui;
 }
 
-void Widget::m_debug() {
-    stat_box1 = ui->m_check1->isChecked();
-    stat_box2 = ui->m_check2->isChecked();
-    stat_box3 = ui->m_check3->isChecked();
-    ui->m_debuglbl->setText(check_box(stat_box1));
-    ui->m_debuglbl->setText(check_box(stat_box1));
-    ui->m_debuglbl->setText(check_box(stat_box1));
-}
 
 QString Widget::check_box(bool status) {
     if (status) return "true";

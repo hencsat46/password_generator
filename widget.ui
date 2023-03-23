@@ -191,45 +191,6 @@
     <string>Debug</string>
    </property>
   </widget>
-  <widget class="QLabel" name="m_debuglbl">
-   <property name="geometry">
-    <rect>
-     <x>400</x>
-     <y>320</y>
-     <width>61</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>DebugText</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="m_debuglbl_2">
-   <property name="geometry">
-    <rect>
-     <x>400</x>
-     <y>350</y>
-     <width>61</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>DebugText</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="m_debuglbl_3">
-   <property name="geometry">
-    <rect>
-     <x>400</x>
-     <y>380</y>
-     <width>61</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>DebugText</string>
-   </property>
-  </widget>
  </widget>
  <resources/>
  <connections/>

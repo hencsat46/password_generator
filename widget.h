@@ -2,7 +2,8 @@
 #define WIDGET_H
 
 #include <QWidget>
-#include "deb.h"
+#include "debug_window.h"
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class Widget; }
 QT_END_NAMESPACE
@@ -19,11 +20,8 @@ public:
     ~Widget();
     QString check_box(bool status);
 
-public slots:
-    void m_debug();
-
 private:
     Ui::Widget *ui;
-    Deb* deb;
+    Deb *debug_w;
 };
 #endif // WIDGET_H
