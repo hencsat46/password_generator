@@ -191,6 +191,19 @@
     <string>Debug</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="window_show">
+   <property name="geometry">
+    <rect>
+     <x>519</x>
+     <y>510</y>
+     <width>91</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Show debug</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

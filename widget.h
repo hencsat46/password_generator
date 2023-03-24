@@ -22,6 +22,9 @@ public:
 
 private:
     Ui::Widget *ui;
-    Deb *debug_w;
+    Deb debug_w;
+public slots:
+    void show_dwindow();
+    void s_debugtext();
 };
 #endif // WIDGET_H

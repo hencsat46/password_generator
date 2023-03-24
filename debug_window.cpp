@@ -22,3 +22,4 @@ void Deb::sh_debug() {
 void Deb::show_text(const QString &string) {
     ui->debug_label->setText(string);
 }
+
