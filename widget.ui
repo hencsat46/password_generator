@@ -2,6 +2,9 @@
 <ui version="4.0">
  <class>Widget</class>
  <widget class="QWidget" name="Widget">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -17,7 +20,7 @@
    <property name="geometry">
     <rect>
      <x>50</x>
-     <y>410</y>
+     <y>440</y>
      <width>80</width>
      <height>25</height>
     </rect>
@@ -31,7 +34,7 @@
     <rect>
      <x>50</x>
      <y>260</y>
-     <width>91</width>
+     <width>101</width>
      <height>23</height>
     </rect>
    </property>
@@ -44,7 +47,7 @@
     <rect>
      <x>50</x>
      <y>290</y>
-     <width>91</width>
+     <width>101</width>
      <height>23</height>
     </rect>
    </property>
@@ -69,7 +72,7 @@
    <property name="geometry">
     <rect>
      <x>50</x>
-     <y>360</y>
+     <y>390</y>
      <width>241</width>
      <height>31</height>
     </rect>
@@ -97,6 +100,9 @@
      <width>111</width>
      <height>25</height>
     </rect>
+   </property>
+   <property name="currentText">
+    <string>11</string>
    </property>
    <item>
     <property name="text">
@@ -191,17 +197,43 @@
     <string>Debug</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="window_show">
+  <widget class="QCheckBox" name="m_check4">
    <property name="geometry">
     <rect>
-     <x>519</x>
-     <y>510</y>
-     <width>91</width>
-     <height>25</height>
+     <x>50</x>
+     <y>350</y>
+     <width>82</width>
+     <height>23</height>
     </rect>
    </property>
    <property name="text">
-    <string>Show debug</string>
+    <string>Symbols</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="e_passw">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>395</y>
+     <width>131</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Invalid password</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::PlainText</enum>
    </property>
   </widget>
  </widget>

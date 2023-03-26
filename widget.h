@@ -1,8 +1,7 @@
 #ifndef WIDGET_H
 #define WIDGET_H
 
-#include <QWidget>
-#include "debug_window.h"
+#include <QtWidgets>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Widget; }
@@ -20,11 +19,13 @@ public:
     ~Widget();
     QString check_box(bool status);
 
+
 private:
+    static void gen_password(Ui::Widget *ui, bool upper, bool lower, bool numbers, bool symbols, int count);
+    static QString gen_char(int start, int end);
     Ui::Widget *ui;
-    Deb debug_w;
 public slots:
-    void show_dwindow();
-    void s_debugtext();
+    void show_debug();
+    void generation();
 };
 #endif // WIDGET_H
