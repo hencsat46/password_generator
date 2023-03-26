@@ -21,11 +21,14 @@ public:
 
 
 private:
-    static void gen_password(Ui::Widget *ui, bool upper, bool lower, bool numbers, bool symbols, int count);
-    static QString gen_char(int start, int end);
+    void gen_password(bool upper, bool lower, bool numbers, bool symbols, int count);
+    QString gen_char(int start, int end);
     Ui::Widget *ui;
+    void copy_life();
+
 public slots:
     void show_debug();
     void generation();
+    void copy();
 };
 #endif // WIDGET_H
